@@ -25,6 +25,9 @@ autoload -Uz compinit && compinit
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 bindkey '^A' beginning-of-line
 bindkey '^E' end-of-line
+bindkey -v
+bindkey '^R' history-incremental-search-backward
+
 export PATH=$PATH:/home/khoa/.cargo/bin
 
 
